@@ -8632,3 +8632,31 @@ a {
         min-width: 0; }
         #navbar ul.navbar-right > li > a span {
           display: none; } }
+
+.hero {
+  margin-top: 70px;
+  height: auto;
+  padding: 4em 0;
+  background: url("../../dist/img/hero-main.png");
+  background-size: cover;
+  color: white; }
+  .hero .cta-buttons {
+    padding-top: 2em; }
+    .hero .cta-buttons a {
+      margin-right: 1.5em; }
+  .hero .cta-message {
+    padding-left: 9em;
+    line-height: 1.6em; }
+    .hero .cta-message p {
+      font-family: "Libre franklin", sans-serif;
+      font-weight: 500; }
+
+@media (max-width: 1199px) {
+  .hero .cta-message {
+    padding-left: 0; } }
+
+@media (max-width: 991px) {
+  .hero .cta-message {
+    text-align: center; }
+  .hero .cta-buttons {
+    text-align: center; } }

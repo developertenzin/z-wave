@@ -1,0 +1,48 @@
+.hero {
+	margin-top: 70px;
+	height: auto;
+	padding: 4em 0;
+	background: url("#{$imgFolderPath}/hero-main.png");
+	background-size: cover;
+	color: white;
+
+
+	.cta-buttons {
+		// border: 1px solid red;
+		padding-top: 2em;
+		a {
+			margin-right: 1.5em;
+		}
+	}
+
+	.cta-message {
+		padding-left: 9em;
+		line-height: 1.6em;
+		// border: 1px solid red;
+
+		p {
+			font-family: "Libre franklin", sans-serif;
+			font-weight: 500;
+		}
+	}
+}
+
+@media (max-width: 1199px) {
+	.hero {
+		.cta-message {
+			padding-left: 0;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.hero {
+		.cta-message {
+			text-align: center;
+		}
+
+		.cta-buttons {
+			text-align: center;
+		}
+	}
+}
