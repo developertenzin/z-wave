@@ -1,0 +1,57 @@
+.push-right {
+	left: 100vw !important;
+	opacity: 0 !important;
+}
+
+.push-left {
+	left: 0 !important;
+	opacity: 1 !important;
+}
+
+.search-form {
+	transition: 0.3s all ease;
+	position: absolute;
+	opacity: 0;
+	left: 100vw;
+	height: 70px;
+	width: 100%;
+	&:before {
+		content: '|';
+		position: absolute;
+		font-size: 1.8em;
+		color: lighten($light-gray, 20%);
+		top: 13px;
+		font-weight: 200;
+		left: 30px;
+	}
+	input {
+		width: 100%;
+		font-family: "Libre Franklin";
+		font-size: 2em;
+		font-style: italic;
+		height: 100%;
+		text-indent: 40px;
+		letter-spacing: 4px;
+		color: $light-gray;
+		&::placeholder {
+   		color: $light-gray;
+		}
+		&:focus, &:active {
+			outline: none;
+		}
+	}
+
+	i {
+		color: $light-gray;
+		padding: 20px 20px;
+		position: relative;
+		left: 95%;
+		font-size: 1.6em;
+		bottom: 2em;
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+
+}

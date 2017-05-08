@@ -1,0 +1,32 @@
+.green-button {
+	background: $green;
+	color: #fff;
+	padding: 1.3em 2.1em;
+	font-family: "Libre Franklin";
+	font-size: 12px;
+	font-weight: bold;
+	border-radius: 4px;
+	transition: 0.3s all ease;
+}
+
+.green-button:hover {
+	background: lighten($green, 5%);
+	color: white;
+}
+
+.white-button {
+	background: transparent;
+	color: #fff;
+	padding: 1.1em 2em;
+	border: 2px solid #fff;
+	border-radius: 4px;
+	font-family: "Libre Franklin";
+	font-weight: bold;
+	font-size: 12px;
+	transition: 0.3s all ease;
+}
+
+.white-button:hover {
+	background: #fff;
+	color: $dark-gray;
+}

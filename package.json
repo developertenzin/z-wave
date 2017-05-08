@@ -1,0 +1,27 @@
+{
+  "name": "automation-z-wave",
+  "version": "1.0.0",
+  "description": "Z-wave automation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/developertenzin/automation-z-wave.git"
+  },
+  "author": "Tenzin Phuljung",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/developertenzin/automation-z-wave/issues"
+  },
+  "homepage": "https://github.com/developertenzin/automation-z-wave#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2"
+  }
+}

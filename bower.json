@@ -1,0 +1,20 @@
+{
+  "name": "automation-z-wave",
+  "description": "Z-wave automation",
+  "main": "app.js",
+  "authors": [
+    "Tenzin Phuljung"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/developertenzin/github",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
