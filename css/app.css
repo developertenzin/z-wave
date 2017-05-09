@@ -8692,6 +8692,7 @@ a {
   height: auto;
   padding: 5em 0;
   background: url("./../../dist/img/hero-main.png");
+  background: url("../../img/hero-main.png");
   background-size: cover;
   color: white; }
   .hero .cta-buttons {
