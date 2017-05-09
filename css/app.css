@@ -8559,6 +8559,7 @@ a {
     outline: none; }
 
 .navbar-fixed-top {
+  overflow-x: hidden;
   min-height: 70px;
   background: white; }
   .navbar-fixed-top .navbar-header .navbar-brand {
@@ -8707,7 +8708,7 @@ a {
       .navbar-fixed-top .navbar-right > li > a {
         width: 100%; } }
 
-@media (min-width: 1024px) and (max-width: 1173px) {
+@media (min-width: 1024px) and (max-width: 1164px) {
   #navbar ul.navbar-right {
     margin-left: 0 !important; }
     #navbar ul.navbar-right > li {
@@ -8795,6 +8796,8 @@ a {
       display: inline-block;
       margin-top: 2em;
       margin-bottom: 3.2em; }
+      #hero-bottom .row a.green-button:hover {
+        text-decoration: none; }
     #hero-bottom .row hr {
       display: block;
       width: 4.3em;

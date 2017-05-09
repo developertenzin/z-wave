@@ -1,4 +1,5 @@
 .navbar-fixed-top {
+	overflow-x: hidden;
 	min-height: 70px;
 	background: white;
 
@@ -264,7 +265,7 @@
 }
 
 
-@media (min-width: 1024px) and (max-width: 1173px) {
+@media (min-width: 1024px) and (max-width: 1164px) {
 	#navbar ul.navbar-right {
 		margin-left: 0 !important;
 

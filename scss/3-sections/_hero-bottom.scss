@@ -25,6 +25,10 @@
 			display: inline-block;
 			margin-top: 2em;
 			margin-bottom: 3.2em;
+
+			&:hover {
+				text-decoration: none;
+			}
 		}
 
 		hr {
