@@ -8739,3 +8739,35 @@ a {
     max-width: 840px; }
     #main-body .row .body-details p {
       margin-bottom: 2em; }
+
+#hero-bottom {
+  height: 437px;
+  background: url("../../dist/img/hero-bottom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -1.8em;
+  color: #fff;
+  padding-top: 4em; }
+  #hero-bottom .row {
+    text-align: center; }
+    #hero-bottom .row h1 {
+      font-family: "Montserrat";
+      font-weight: 500; }
+    #hero-bottom .row h4 {
+      font-family: "Libre Franklin";
+      font-weight: 300; }
+    #hero-bottom .row a.green-button {
+      display: inline-block;
+      margin-top: 2em;
+      margin-bottom: 3.2em; }
+    #hero-bottom .row hr {
+      display: block;
+      width: 4.3em;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 0 auto; }
+    #hero-bottom .row .social-icons {
+      margin-top: 2.8em; }
+      #hero-bottom .row .social-icons i {
+        margin: 0 0.5em; }
