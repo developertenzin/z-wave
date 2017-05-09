@@ -8691,8 +8691,7 @@ a {
   margin-top: 70px;
   height: auto;
   padding: 5em 0;
-  background: url("./../../dist/img/hero-main.png");
-  background: url("../img/hero-main.png");
+  background: url("./../../dist/img/hero-main.png"), url("./../dist/img/hero-main.png");
   background-size: cover;
   color: white; }
   .hero .cta-buttons {
@@ -8746,7 +8745,7 @@ a {
 
 #hero-bottom {
   height: 437px;
-  background: url("./../../dist/img/hero-bottom.jpg");
+  background: url("./../../dist/img/hero-bottom.jpg"), url("./../dist/img/hero-bottom.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -1.8em;

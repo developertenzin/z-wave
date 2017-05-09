@@ -2,8 +2,7 @@
 	margin-top: 70px;
 	height: auto;
 	padding: 5em 0;
-	background: url("#{$imgFolderPath}/hero-main.png");
-	background: url("../img/hero-main.png");
+	background: url("#{$imgFolderPath}/hero-main.png"), url("./../dist/img/hero-main.png");
 	background-size: cover;
 	color: white;
 

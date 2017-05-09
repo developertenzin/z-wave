@@ -1,6 +1,6 @@
 #hero-bottom {
 	height: 437px;
-	background: url("#{$imgFolderPath}/hero-bottom.jpg");
+	background: url("#{$imgFolderPath}/hero-bottom.jpg"), url("./../dist/img/hero-bottom.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-top: -1.8em;
