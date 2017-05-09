@@ -208,7 +208,7 @@
 
 			> li {
 				max-width: 100vw;
-				// border: 1px solid green;
+				border-bottom: 1px solid darken($soft-white, 10%);
 
 				&.dropdown.open {
 					position: static;
