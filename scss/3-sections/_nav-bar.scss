@@ -18,7 +18,6 @@
 			// Inside dropdown menu
 			&.dropdown.open {
 				position: static;
-				letter-spacing: 1.1px;
 
 				.dropdown-menu {
 					background-color: $soft-white !important;
@@ -178,7 +177,6 @@
 
 
 @media (max-width: 1023px) {
-	overflow-x: hidden;
 
 	.navbar {
 		margin-left: -15px;
@@ -266,7 +264,7 @@
 }
 
 
-@media (min-width: 1024px) and (max-width: 1164px) {
+@media (min-width: 1024px) and (max-width: 1173px) {
 	#navbar ul.navbar-right {
 		margin-left: 0 !important;
 
