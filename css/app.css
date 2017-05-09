@@ -8505,11 +8505,11 @@ a {
   opacity: 1 !important; }
 
 .search-form {
-  transition: 0.3s all ease;
+  transition: 0.2s all ease;
   position: absolute;
   opacity: 0;
   left: 100vw;
-  height: 70px;
+  height: 71px;
   width: 100%; }
   .search-form:before {
     content: '|';
@@ -8517,7 +8517,7 @@ a {
     font-size: 1.8em;
     color: #dadee0;
     top: 13px;
-    font-weight: 200;
+    font-weight: 400;
     left: 30px; }
   .search-form input {
     width: 100%;
@@ -8545,6 +8545,10 @@ a {
     bottom: 2em; }
     .search-form i:hover {
       cursor: pointer; }
+
+@media (max-width: 1024px) {
+  .search-form {
+    width: 100vw; } }
 
 #loginModal button[type="submit"]:hover {
   cursor: pointer; }

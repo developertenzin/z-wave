@@ -9,11 +9,11 @@
 }
 
 .search-form {
-	transition: 0.3s all ease;
+	transition: 0.2s all ease;
 	position: absolute;
 	opacity: 0;
 	left: 100vw;
-	height: 70px;
+	height: 71px;
 	width: 100%;
 	&:before {
 		content: '|';
@@ -21,7 +21,7 @@
 		font-size: 1.8em;
 		color: lighten($light-gray, 20%);
 		top: 13px;
-		font-weight: 200;
+		font-weight: 400;
 		left: 30px;
 	}
 	input {
@@ -54,4 +54,10 @@
 		}
 	}
 
+}
+
+@media (max-width: 1024px) {
+	.search-form {
+		width: 100vw;
+	}
 }
