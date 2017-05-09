@@ -86,8 +86,8 @@
 	#footer {
 		div.col-xs-12 {
 			text-align: center;
-			padding-top: 30px;
-			padding-bottom: 30px;
+			padding-top: 33px;
+			padding-bottom: 33px;
 		}
 	}
 }
@@ -117,6 +117,9 @@
 		}
 
 		div.col-xs-12 {
+			&:first-child {
+				border-top: none;
+			}
 			border-top: 1px solid $soft-white;
 			a {
 				font-size: 1.2em;

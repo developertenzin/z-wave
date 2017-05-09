@@ -8887,8 +8887,8 @@ a {
 @media (max-width: 768px) {
   #footer div.col-xs-12 {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px; } }
+    padding-top: 33px;
+    padding-bottom: 33px; } }
 
 @media (max-width: 480px) {
   #footer .footer-copyright p {
@@ -8904,5 +8904,7 @@ a {
     position: relative; }
   #footer div.col-xs-12 {
     border-top: 1px solid #F4F5F5; }
+    #footer div.col-xs-12:first-child {
+      border-top: none; }
     #footer div.col-xs-12 a {
       font-size: 1.2em; } }
