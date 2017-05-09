@@ -1,20 +1,86 @@
-@media (max-width: 991px) {
-	h1 {
-		font-size: 2.53em;
-	}
-	h2 {
-		font-size: 2.006em;
-	}
-	h3 {
-		font-size: 1.5em;
-	}
-	h4 {
-		font-size: 1.167em;
-	}
-	h5 {
-		font-size: 0.933em;
-	}
-	h6 {
-		font-size: 0.92em;
-	}
-}
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+			body {
+				font-size: 14.5px !important;
+			}
+				h1 {
+					font-size: 2.6em;
+				}
+				h2 {
+					font-size: 2.15em;
+				}
+				h3 {
+					font-size: 1.7em;
+				}
+				h4 {
+					font-size: 1.25em;
+				}
+				h5 {
+					font-size: 1em;
+				}
+				h6 {
+					font-size: 0.93em;
+				}
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+			body {
+				font-size: 14px !important;
+			}
+			h1 {
+				font-size: 2.3em;
+			}
+			h2 {
+				font-size: 2em;
+			}
+			h3 {
+				font-size: 1.7em;
+			}
+			h4 {
+				font-size: 1.4em;
+			}
+			h5 {
+				font-size: 1.25em;
+			}
+			h6 {
+				font-size: 1.1em;
+			}
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width : 480px) {
+			body {
+				font-size: 13px !important;
+			}
+				h1 {
+					font-size: 2.3em;
+				}
+				h2 {
+					font-size: 2em;
+				}
+				h3 {
+					font-size: 1.7em;
+				}
+				h4 {
+					font-size: 1.4em;
+				}
+				h5 {
+					font-size: 1.25em;
+				}
+				h6 {
+					font-size: 1.1em;
+				}
+    }
+
+    /* Custom, iPhone Retina */
+    @media only screen and (max-width : 320px) {
+
+    }
