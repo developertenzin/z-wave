@@ -21,6 +21,8 @@ var Wave = (function() {
 	var $emailErrorMessage = $(".email-error");
 	var $passwordErrorMessage = $(".password-error");
 
+	var $emailShowBox = $(".show-email");
+
 
 
 	// Bind Events
@@ -57,6 +59,7 @@ var Wave = (function() {
 	function checkLocalStorage() {
 		if (localStorage.email || localStorage.password) {
 			$loginButtonText.text("My Account");
+			$emailShowBox.text(localStorage.email);
 		}
 	}
 

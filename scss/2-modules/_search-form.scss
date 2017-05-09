@@ -12,6 +12,7 @@
 	transition: 0.2s all ease;
 	position: absolute;
 	opacity: 0;
+	top: 0;
 	left: 100vw;
 	height: 71px;
 	width: 100%;
@@ -58,18 +59,18 @@
 
 @media (max-width: 1024px) {
 	.search-form {
+		margin-left: 15px;
 		&:before {
 				content: "";
 		}
 		width: 100vw;
 		input {
-			padding-left: 5px;
-			padding-right: 30px;
 			font-size: 1.1em !important;
 			letter-spacing: 1px;
-			i {
-				left: 90%;
-			}
+		}
+		i {
+			left: 88%;
+			bottom: 45px;
 		}
 	}
 }
