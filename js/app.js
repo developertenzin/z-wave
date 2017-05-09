@@ -115,8 +115,4 @@ Wave.closeSearch();
 Wave.checkLocalStorage();
 Wave.formValidator();
 Wave.showHideModal();
-
-
-$(function() {
-	FastClick.attach(document.body);
-});
+FastClick.attach(document.body);
