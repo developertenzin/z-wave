@@ -8774,3 +8774,36 @@ a {
       margin-top: 2.8em; }
       #hero-bottom .row .social-icons i {
         margin: 0 0.5em; }
+
+#extras {
+  border-bottom: 1px solid #e8eaec;
+  padding: 1.6em 2em; }
+  #extras .extras-item {
+    transition: 0.3s all ease; }
+    #extras .extras-item:hover {
+      cursor: pointer; }
+      #extras .extras-item:hover i {
+        color: #124668; }
+    #extras .extras-item i,
+    #extras .extras-item span {
+      display: inline-block; }
+    #extras .extras-item i {
+      font-size: 2.4em;
+      color: #319AD1; }
+    #extras .extras-item span {
+      margin-left: 0.8em;
+      line-height: 0.8em; }
+      #extras .extras-item span h6 {
+        font-family: "Libre Franklin";
+        text-transform: uppercase;
+        color: #124668; }
+      #extras .extras-item span p {
+        font-size: 1.25em;
+        font-family: "Libre Franklin";
+        font-weight: 300;
+        color: #A2ACB2; }
+
+@media (max-width: 992px) {
+  .extras-item {
+    text-align: center;
+    padding: 1.4em 0; } }
