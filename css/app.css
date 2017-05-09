@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: 'CD-Project-Icons';
-  src: url("./../../fonts/CD-Project-Icons.woff2?qsy08t") format("woff2"), url("./../../fonts/CD-Project-Icons.ttf?qsy08t") format("truetype"), url("./../../fonts/CD-Project-Icons.woff?qsy08t") format("woff"), url("./../../fonts/CD-Project-Icons.svg?qsy08t#CD-Project-Icons") format("svg");
+  src: url("../../fonts/CD-Project-Icons.woff2?qsy08t") format("woff2"), url("../../fonts/CD-Project-Icons.ttf?qsy08t") format("truetype"), url("../../fonts/CD-Project-Icons.woff?qsy08t") format("woff"), url("../../fonts/CD-Project-Icons.svg?qsy08t#CD-Project-Icons") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -8701,6 +8701,9 @@ a {
   .hero .cta-message {
     padding-left: 9em;
     line-height: 1.6em; }
+    .hero .cta-message h1 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500; }
     .hero .cta-message p {
       font-family: "Libre franklin", sans-serif;
       font-weight: 500; }

@@ -19,7 +19,10 @@
 		padding-left: 9em;
 		line-height: 1.6em;
 		// border: 1px solid red;
-
+		h1 {
+			font-family: $montserrat-stack;
+			font-weight: 500;
+		}
 		p {
 			font-family: "Libre franklin", sans-serif;
 			font-weight: 500;
