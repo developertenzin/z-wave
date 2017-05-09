@@ -2,12 +2,15 @@ var Wave = (function() {
 	// CacheDom
 	var $browse = $("#browse");
 	var $subNav = $(".sub-nav");
+	// Search Form CacheDom
 	var $searchForm = $(".search-form");
 	var $searchButton = $("#search-button");
 	var $closeButton = $("#close-button");
 	var $searchInput = $(".search-form > input");
+
+	// Sign in Modal Formj CacheDom
 	var $loginButton = $("#login-button");
-	var $loginButtonText = $("#login-button span");
+	var $loginButtonText = $("#login-button > span.login-text");
 
 	var $loginForm = $("#login-form");
 	var $emailInput = $("#email");
@@ -15,11 +18,14 @@ var Wave = (function() {
 	var $signinButton = $(".sign-in");
 	var $modalCloseButton = $(".close");
 
+	var $emailErrorMessage = $(".email-error");
+	var $passwordErrorMessage = $(".password-error");
+
+
 
 	// Bind Events
 	function showSubNav() {
 		$browse.hover(function() {
-			console.log("heeeeyyy");
 			$subNav.toggleClass("flexing", 3000);
 		});
 	}
@@ -54,13 +60,29 @@ var Wave = (function() {
 		}
 	}
 
+
 	function formValidator() {
 		$signinButton.on("click", function(e) {
 			e.preventDefault();
-			console.log("you clicked");
-			if (validateEmail($emailInput.val()) && validatePassword($passwordInput.val())) {
-				localStorage.setItem("email", $emailInput.val());
-				localStorage.setItem("password", $passwordInput.val());
+			var userEmail = $emailInput.val();
+			var userPassword = $passwordInput.val();
+			var valid = true;
+			if (!(validateEmail(userEmail))) {
+				valid = false;
+				$emailErrorMessage.text("Please enter a valid email...");
+			} else {
+				$emailErrorMessage.text("");
+			}
+			if (!(validatePassword(userPassword))) {
+				valid = false;
+				$passwordErrorMessage.text("Please enter a valid password...");
+			}
+			else {
+				$passwordErrorMessage.text("");
+			}
+			if (valid) {
+				localStorage.setItem("email", userEmail);
+				localStorage.setItem("password", userPassword);
 				$loginForm.submit();
 			}
 		});
@@ -93,3 +115,8 @@ Wave.closeSearch();
 Wave.checkLocalStorage();
 Wave.formValidator();
 Wave.showHideModal();
+
+
+$(function() {
+	FastClick.attach(document.body);
+});

@@ -58,6 +58,18 @@
 
 @media (max-width: 1024px) {
 	.search-form {
+		&:before {
+				content: "";
+		}
 		width: 100vw;
+		input {
+			padding-left: 5px;
+			padding-right: 30px;
+			font-size: 1.1em !important;
+			letter-spacing: 1px;
+			i {
+				left: 90%;
+			}
+		}
 	}
 }

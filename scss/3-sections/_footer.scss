@@ -84,10 +84,35 @@
 
 @media (max-width: 768px) {
 	#footer {
+		.footer-copyright {
+			p {
+				font-size: 1em !important;
+			}
+		}
+
+		.footer-icons {
+			a {
+				i {
+					width: 50px;
+					height: 50px;
+					padding: 10px;
+					font-size: 2em !important;
+					margin: 0 1em;
+					position: relative;
+				}
+			}
+		}
 		div.col-xs-12 {
 			text-align: center;
 			padding-top: 33px;
 			padding-bottom: 33px;
+			&:first-child {
+				border-top: none;
+			}
+			border-top: 1px solid $soft-white;
+			a {
+				font-size: 1.2em;
+			}
 		}
 	}
 }

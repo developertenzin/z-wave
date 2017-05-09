@@ -8548,10 +8548,22 @@ a {
 
 @media (max-width: 1024px) {
   .search-form {
-    width: 100vw; } }
+    width: 100vw; }
+    .search-form:before {
+      content: ""; }
+    .search-form input {
+      padding-left: 5px;
+      padding-right: 30px;
+      font-size: 1.1em !important;
+      letter-spacing: 1px; }
+      .search-form input i {
+        left: 90%; } }
 
-#loginModal button[type="submit"]:hover {
-  cursor: pointer; }
+#loginModal button[type="submit"] {
+  font-size: 1.2em;
+  padding: 8px 14px; }
+  #loginModal button[type="submit"]:hover {
+    cursor: pointer; }
 
 #loginModal .close {
   background: #dadee0;
@@ -8654,19 +8666,39 @@ a {
           background: #F4F5F5 !important; }
     .navbar-fixed-top .navbar-nav.navbar-right {
       padding-right: 1em; }
-      .navbar-fixed-top .navbar-nav.navbar-right > li:first-of-type a {
-        font-size: 12px; }
-      .navbar-fixed-top .navbar-nav.navbar-right > li:hover i {
-        color: #596166; }
-      .navbar-fixed-top .navbar-nav.navbar-right > li > a {
-        min-width: 6em; }
-        .navbar-fixed-top .navbar-nav.navbar-right > li > a > i {
-          color: #2AAD61;
-          font-size: 18px;
-          position: relative;
-          top: 2px; }
-      .navbar-fixed-top .navbar-nav.navbar-right > li:last-of-type i {
-        color: #596166; }
+      .navbar-fixed-top .navbar-nav.navbar-right > li {
+        border: none; }
+        .navbar-fixed-top .navbar-nav.navbar-right > li:first-of-type a {
+          font-size: 12px; }
+        .navbar-fixed-top .navbar-nav.navbar-right > li:hover i {
+          color: #596166; }
+        .navbar-fixed-top .navbar-nav.navbar-right > li > a {
+          min-width: 6em;
+          position: relative; }
+          .navbar-fixed-top .navbar-nav.navbar-right > li > a span.show-email {
+            position: absolute;
+            top: 45px;
+            color: white;
+            z-index: 100;
+            display: block;
+            font-size: 9px; }
+          .navbar-fixed-top .navbar-nav.navbar-right > li > a > i {
+            color: #2AAD61;
+            font-size: 18px;
+            position: relative;
+            top: 2px; }
+        .navbar-fixed-top .navbar-nav.navbar-right > li:last-of-type i {
+          color: #596166; }
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  #navbar ul.navbar-right {
+    margin-left: 0 !important; }
+    #navbar ul.navbar-right > li {
+      max-width: 60px; }
+      #navbar ul.navbar-right > li > a {
+        min-width: 0; }
+        #navbar ul.navbar-right > li > a span {
+          display: none; } }
 
 @media (max-width: 1023px) {
   .navbar {
@@ -8709,16 +8741,6 @@ a {
       width: 100%; }
       .navbar-fixed-top .navbar-right > li > a {
         width: 100%; } }
-
-@media (min-width: 1024px) and (max-width: 1173px) {
-  #navbar ul.navbar-right {
-    margin-left: 0 !important; }
-    #navbar ul.navbar-right > li {
-      max-width: 60px; }
-      #navbar ul.navbar-right > li > a {
-        min-width: 0; }
-        #navbar ul.navbar-right > li > a span {
-          display: none; } }
 
 .hero {
   margin-top: 70px;
@@ -8777,6 +8799,18 @@ a {
       margin-bottom: 2em;
       letter-spacing: 1px;
       font-size: 14px; }
+
+@media (max-width: 992px) {
+  #main-body img {
+    width: 4.8em; } }
+
+@media (max-width: 768px) {
+  #main-body img {
+    width: 3.8em; } }
+
+@media (max-width: 600px) {
+  #main-body img {
+    width: 2.7em; } }
 
 #hero-bottom {
   height: 437px;
@@ -8891,10 +8925,24 @@ a {
     position: relative; } }
 
 @media (max-width: 768px) {
+  #footer .footer-copyright p {
+    font-size: 1em !important; }
+  #footer .footer-icons a i {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    font-size: 2em !important;
+    margin: 0 1em;
+    position: relative; }
   #footer div.col-xs-12 {
     text-align: center;
     padding-top: 33px;
-    padding-bottom: 33px; } }
+    padding-bottom: 33px;
+    border-top: 1px solid #F4F5F5; }
+    #footer div.col-xs-12:first-child {
+      border-top: none; }
+    #footer div.col-xs-12 a {
+      font-size: 1.2em; } }
 
 @media (max-width: 480px) {
   #footer .footer-copyright p {

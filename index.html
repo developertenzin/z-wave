@@ -11,9 +11,9 @@
 
 	<!-- Bootstrap core CSS -->
 
-	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500|Montserrat:300,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,500,700|Montserrat:300,400,500" rel="stylesheet">
 	<link rel="stylesheet" href="css/app.css">
-	<script src="js/fast-click.js" charset="utf-8"></script>
+	<script src="bower_components/fastclick/lib/fastclick.js" charset="utf-8"></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -86,7 +86,8 @@
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li>
-					<a href="#"> <i class="icon-account-circle"></i> <span>LOG IN</span>
+					<a href="#" id="login-button"> <i class="icon-account-circle"></i> <span class="login-text">LOG IN</span>
+						<span class="show-email">tenzinphuljung@gmail.com</span>
 					</a>
 				</li>
 				<li>
@@ -107,6 +108,32 @@
 		</div>
 		<!--/.nav-collapse -->
 	</nav>
+
+	<div class="modal fade" id="loginModal" role="dialog">
+		<div class="modal-dialog">
+			<!--Modal content -->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close">&times;</button>
+					<h4 class="modal-title">Login </h4>
+				</div>
+				<div class="modal-body">
+					<form class="form" role="form" id="login-form">
+						<div class="form-group">
+							<input type="email" name="email" class="form-control input-sm" id="email" placeholder="Email" data-toggle="tooltip" data-placement="bottom" title="Enter a valid email..." required>
+							<span class="text-danger email-error"></span>
+						</div>
+						<div class="form-group">
+							<input type="password" name="password" class="form-control input-sm" id="password" placeholder="Password" data-toggle="tooltip" data-placement="bottom" title="Mininum six characters..."required>
+							<span class="text-danger password-error"></span>
+						</div>
+						<button type="submit" class="green-button sign-in btn btn-success text-center"> Sign in</button>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</div>
 
 	<!-- hero section -->
 	<section class="hero">
