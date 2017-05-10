@@ -34,6 +34,7 @@
 						width: 33.33333%;
 						padding: 60px 0;
 						line-height: 2em;
+						position: relative;
 
 						&:nth-of-type(1) {
 							> span img {
@@ -42,6 +43,15 @@
 								top: 0.33333em;
 							}
 						}
+
+						.submenu-divider {
+							border-right: 2px solid lighten($light-gray, 25%);
+							min-height: 160px;
+							position: absolute;
+							left: 23em;
+							top: 4.4em;
+						}
+
 
 						> span {
 							display: block;
@@ -189,6 +199,9 @@
 // Media Queries
 
 @media (min-width: 1024px) and (max-width: 1199px) {
+	.submenu-divider {
+		display: none !important;
+	}
 	#navbar ul.navbar-right {
 		margin-left: 0 !important;
 
@@ -205,6 +218,9 @@
 }
 
 @media (max-width: 1023px) {
+	.submenu-divider {
+		display: none !important;
+	}
 
 	.navbar {
 		margin-left: -15px;
