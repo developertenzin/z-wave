@@ -59,6 +59,7 @@
 							a {
 								font-family: $libre-stack;
 								font-size: 0.93333em;
+								transition: 0.3s all ease;
 
 								&.dropdown-title {
 									font-size: 1.33333em;
@@ -67,6 +68,7 @@
 									font-weight: 500;
 									display: block;
 								}
+
 
 								&:hover {
 									text-decoration: none;
