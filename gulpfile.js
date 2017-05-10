@@ -20,7 +20,8 @@ gulp.task("sass", function() {
   return gulp.src('scss/**/*.scss')
     .pipe(sass({
 			errLogToConsole: true,
-			includePaths: sassPaths
+			includePaths: sassPaths,
+			outputStyle: 'compressed'
 		}).on('error', sass.logError))
     .pipe(autoprefixer({
       browsers: ['last 2 versions']
