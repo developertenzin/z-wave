@@ -14,7 +14,7 @@
 	color: white;
 }
 
-.white-button {
+.white-button,  {
 	background: transparent;
 	color: #fff;
 	padding: 1.1em 2em;
@@ -24,6 +24,10 @@
 	font-weight: bold;
 	font-size: 12px;
 	transition: 0.3s all ease;
+}
+
+.white-button:visited {
+	color: #fff;
 }
 
 .white-button:hover {
